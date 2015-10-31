@@ -1,0 +1,35 @@
+<Book>
+    <firstExample>
+        firstExampleString
+    </firstExample>
+
+     <secondExample>
+        secondExampleString
+    </secondExample>
+
+    <thirdExample>
+        thirdExampleString
+    </thirdExample>
+</Book>
+
+<Image>
+	<Example>
+		exampleImage.jpg
+	</Example>
+</Image>
+
+<Video>
+	<Example>
+		exampleVideo.mov
+	</Example>
+</Video>
+
+<Webpage>
+	<Example>
+		www.google.com
+	</Example>
+</Webpage>
+
+
+
+
