@@ -11,42 +11,49 @@ public:
     void setup();
     void update();
     void draw();
-    
+
     void mousePressed(int x, int y, int button);
-    
+
     //tesseract
     ofxTesseract ocr;
     string ocrStr;
-    ofImage image;
-    ofImage basisboekImage;
-    ofImage bauhausboekImage;
-    
+
     //webcam
     ofVideoGrabber camera;
     ofxCvColorImage rgb;
     int w,h;
-    
+
+    //image
+    ofImage exampleImage;
+    ofImage image;
+
     //videoplayer
-    ofVideoPlayer chapterOne;
-    ofVideoPlayer chapterTwo;
-    
+    ofVideoPlayer exampleVideo;
+
+    //webpage
+    bool exampleWebPage = false;
+
     //xmlsetting
     ofxXmlSettings XML;
     string message;
-    string XMLChapterOne;
-    string XMLChapterTwo;
-    
+    string xmlExampleString;
+    string xmlFirstExampleString;
+    string xmlSecondExampleString;
+    string xmlThirdExampleString;
+    string xmlExampleImage;
+    string xmlExampleVideo;
+    string xmlExampleWebpage;
+
     //regex
-    bool chapterOneMatch;
-    bool chapterTwoMatch;
-    
+    bool firstExampleStringMatch;
+    bool secondExampleStringMatch;
+    bool thirdExampleStringMatch;
+
     //booleans
     bool detectedText = false;
-    
-    bool chapterOneSrc = false;
-    bool chapterTwoSrc = false;
-    
-    //bool webPage = false;
+    bool exampleImageBoolean = false;
+    bool exampleVideoBoolean = false;
+    bool exampleWebPageBoolean = false;
 };
 
 #endif

@@ -1,35 +1,38 @@
-<Book>
-    <firstExample>
-        firstExampleString
-    </firstExample>
+<Settings>
 
-     <secondExample>
-        secondExampleString
-    </secondExample>
+	<Book>
+	    <firstExample>
+	        bauhaus
+	    </firstExample>
 
-    <thirdExample>
-        thirdExampleString
-    </thirdExample>
-</Book>
+	     <secondExample>
+	        Banksy
+	    </secondExample>
 
-<Image>
-	<Example>
-		exampleImage.jpg
-	</Example>
-</Image>
+	    <thirdExample>
+	        BASISBOEK WISKUNDE
+	    </thirdExample>
+	</Book>
 
-<Video>
-	<Example>
-		exampleVideo.mov
-	</Example>
-</Video>
+	<Image>
+		<Example>
+			exampleImage.jpg
+		</Example>
+	</Image>
 
-<Webpage>
-	<Example>
-		www.google.com
-	</Example>
-</Webpage>
+	<Video>
+		<Example>
+			exampleVideo.mov
+		</Example>
+	</Video>
 
+	<Webpage>
+		<Example>
+			http://www.google.com
+		</Example>
+	</Webpage>
+
+</Settings>
 
 
 

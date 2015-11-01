@@ -1,10 +1,38 @@
-<Book>
-    <ChapterOne>
-        bauhaus
-    </ChapterOne>
-    
-    <ChapterTwo>
-    	basisboekwiskunde
-    </ChapterTwo>
-</Book>
-        
+<Settings>
+
+	<Book>
+	    <firstExample>
+	        bauhaus
+	    </firstExample>
+
+	     <secondExample>
+	        Banksy
+	    </secondExample>
+
+	    <thirdExample>
+	        BASISBOEK WISKUNDE
+	    </thirdExample>
+	</Book>
+
+	<Image>
+		<Example>
+			exampleImage.jpg
+		</Example>
+	</Image>
+
+	<Video>
+		<Example>
+			exampleVideo.mov
+		</Example>
+	</Video>
+
+	<Webpage>
+		<Example>
+			www.google.com
+		</Example>
+	</Webpage>
+
+</Settings>
+
+
+

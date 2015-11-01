@@ -25,6 +25,7 @@ public:
 
     //image
     ofImage exampleImage;
+    ofImage image;
 
     //videoplayer
     ofVideoPlayer exampleVideo;
@@ -35,9 +36,13 @@ public:
     //xmlsetting
     ofxXmlSettings XML;
     string message;
+    string xmlExampleString;
     string xmlFirstExampleString;
     string xmlSecondExampleString;
     string xmlThirdExampleString;
+    string xmlExampleImage;
+    string xmlExampleVideo;
+    string xmlExampleWebpage;
 
     //regex
     bool firstExampleStringMatch;
@@ -48,6 +53,7 @@ public:
     bool detectedText = false;
     bool exampleImageBoolean = false;
     bool exampleVideoBoolean = false;
+    bool exampleWebPageBoolean = false;
 };
 
 #endif

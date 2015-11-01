@@ -15,19 +15,21 @@ void ofApp::setup() {
     }
 
     //strings to look for
-    xmlExampleString = XML.getValue("Book:Example", "default text");
+    xmlFirstExampleString = XML.getValue("Settings:Book:firstExample", "default text");
+    xmlSecondExampleString = XML.getValue("Settings:Book:secondExample", "default text");
+    xmlThirdExampleString = XML.getValue("Settings:Book:thirdExample", "default text");
 
     //image
-    xmlExampleImage = XML.getValue("Image:Example", "default text");
+    xmlExampleImage = XML.getValue("Settings:Image:Example", "default text");
     exampleImage.loadImage(xmlExampleImage);
 
     //video
-    xmlExampleVideo = XML.getValue("Video:Example", "default text");
+    xmlExampleVideo = XML.getValue("Settings:Video:Example", "default text");
     exampleVideo.loadMovie(xmlExampleVideo);
 
     //webpage
     xmlExampleWebpage = XML.getValue("Webpage:Example", "default text");
-    exampleWebpage = system(xmlExampleWebpage);
+    //exampleWebPage = system(xmlExampleWebpage);
 
     ofSetVerticalSync(true);
     ocr.setup();
@@ -45,7 +47,7 @@ void ofApp::setup() {
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    chapterOne.update(); //necessary?
+    exampleVideo.update(); //necessary?
 
     if(detectedText == false){
         camera.update();
@@ -57,16 +59,14 @@ void ofApp::update(){
                 image.setFromPixels(camera.getPixels(), w, h, OF_IMAGE_COLOR, true);
                 ocrStr = ocr.findText(image);
 
-                //cout << ocrStr;
-                //Remove the spaces of the ocrStr
-                //ocrStr.erase(std::remove(ocrStr.begin(), ocrStr.end(), ' '), ocrStr.end());
-                //Transform ocrStr to lower case
-                //std::transform(ocrStr.begin(), ocrStr.end(), ocrStr.begin(), ::tolower);
+//                cout << ocrStr;
+//                ocrStr.erase(std::remove(ocrStr.begin(), ocrStr.end(), ' '), ocrStr.end());
+//                std::transform(ocrStr.begin(), ocrStr.end(), ocrStr.begin(), ::tolower);
 
-                if(ocrStr.length() > 50) {
-                    camera.update();
-                    ocrStr.erase();
-                }
+//                if(ocrStr.length() > 50) {
+//                    camera.update();
+//                    ocrStr.erase();
+//                }
 
                 cout << ocrStr;
                 Poco::RegularExpression::Match matchedString;
@@ -78,8 +78,6 @@ void ofApp::update(){
                 if (firstExampleStringMatch) {
                     detectedText = true;
                     exampleImageBoolean = true;
-                    //exampleVideoBoolean = true;
-                    //exampleWebPageBoolean = true;
                 }
 
                 Poco::RegularExpression secondExampleStringRE(xmlSecondExampleString);
@@ -87,9 +85,7 @@ void ofApp::update(){
 
                 if (secondExampleStringMatch) {
                     detectedText = true;
-                    //exampleImageBoolean = true;
                     exampleVideoBoolean = true;
-                    //exampleWebPageBoolean = true;
                 }
 
                 Poco::RegularExpression thirdExampleStringRE(xmlThirdExampleString);
@@ -97,8 +93,6 @@ void ofApp::update(){
 
                 if (thirdExampleStringMatch) {
                     detectedText = true;
-                    //exampleImageBoolean = true;
-                    //exampleVideoBoolean = true;
                     exampleWebPageBoolean = true;
                 }
             }
@@ -125,8 +119,8 @@ void ofApp::draw(){
     }
 
     if(detectedText && exampleWebPageBoolean){
-        exampleWebPage;
-        webPageBoolean = false;
+        system("open http://www.google.com");
+        exampleWebPageBoolean = false;
     }
 }
 
