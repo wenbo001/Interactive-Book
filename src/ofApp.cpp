@@ -71,7 +71,6 @@ void ofApp::update(){
                 cout << ocrStr;
                 Poco::RegularExpression::Match matchedString;
 
-                //firstExample
                 Poco::RegularExpression firstExampleStringRE(xmlFirstExampleString);
                 firstExampleStringMatch = firstExampleStringRE.match(ocrStr, matchedString);
 
