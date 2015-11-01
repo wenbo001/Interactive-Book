@@ -21,3 +21,14 @@ You can add/modify what images, video or webpages you would like to show based o
 - ofxOpenCv
 - ofxXmlSettings
 - ofxTesseract
+
+## To do:
+
+- Add comments where necessary
+- Implement smile detection (ofxSmile)
+- Find a way to override the "system() is not a function issue", maybe find a different way or include a specific C++ library?
+- Do more research on Regex (mid sentence, merged words)
+- find a way to open the browser cross platform (iPad, Windows).
+- Do more testing on other platforms. I wasn’t able to get Tesseract running properly on Windows (I didn’t try hard though).
+- Add more options for user interaction: keyboard, mouse, gestures.
+- Implement the possibilty of adding multiple versions of the same work like: "BASISBOEK WISKUNDE" and "BASISBOEKWISKUNDE" to increase the chance of success.
