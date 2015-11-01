@@ -1,17 +1,17 @@
 <Settings>
 
 	<Book>
-	    <firstExample>
-	        bauhaus
-	    </firstExample>
+	    	<firstExample>
+	        	bauhaus
+	    	</firstExample>
 
-	     <secondExample>
-	        Banksy
-	    </secondExample>
+	     	<secondExample>
+	        	Banksy
+	    	</secondExample>
 
-	    <thirdExample>
-	        BASISBOEK WISKUNDE
-	    </thirdExample>
+	    	<thirdExample>
+	        	BASISBOEK WISKUNDE
+	    	</thirdExample>
 	</Book>
 
 	<Image>
