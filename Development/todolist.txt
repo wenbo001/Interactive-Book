@@ -9,19 +9,19 @@
 //sans-serif/serif/italic all work fine, problems with some fonts having uppercase letters in lowercase typeset
 //find a way how to use system(open url) from XML
 //Big blobs of text really drop the framerate, maybe limit at 20 characters (ocrStr)
+//research XML structure/standards
+//Rewrite the ofApp.cpp file to make alot more sense
+//Include image/video/webpage in the XML file
+
 
 //TO DO
-//add comments where necessary
-//research XML structure/standards
-//do more research on regex (mid sentence, merged words)//find a way to open the browser cross platform (iPad?, Windows)
-//Make 5 different short video's (chapter 1 - 5)
-//User won't know what to scan (fix with big title on nearly empty page?, recommendation)
-//documentation:doxygn
-
-//add other things when finding text (movie/webpage/image/audio/etc..)
-
-//add user interaction motion,keyboard,mouse,touchboard?
-//replace mousePressed with other user interaction (openCV/gesture?), smiles?
+//Implement smile detection (ofxSmile
+//Add comments where necessary
+//Find a way to override the system() is not a function issue, maybe find a different way or include a specific C++ library?
+//Do more research on regex (mid sentence, merged words)
+//find a way to open the browser cross platform (iPad?, Windows)
+//Do more testing on other platforms. I wasn’t able to get Tesseract running properly on Windows (I didn’t try hard though).
+//Add user interaction motion,keyboard,mouse,touchboard?
 
 //OPTIONAL
 //add cover interaction
